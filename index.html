@@ -10,25 +10,36 @@
 </head>
 <body>
     <div class="container">
-        
-        <div class="box1">
-            <div>
+
+        <div class="parent1">
+            <div class="child1">
                 <h1>URL Shortener</h1>
-                <a href="https://github.com/l33t7here" target="_blank"> <button class="git"><i class="fab fa-github"></i> MY GiT</button></a>
+
+
             </div>
-            <div id="animatedText"></div> 
-            
+            <div class="child2">
+                <a href="https://github.com/l33t7here" target="_blank"><i id="gitlogo" class="fab fa-github"></i> MY
+                    GiT</a>
+
+            </div>
         </div>
-        <div class="box2">
+
+
+        <div class="parent2">
+            <div class="child3" id="animatedText"></div>
+
+        </div>
+        <div class="parent3">
             <div class="urlBox">
-                
-                <input style="font-family: FontAwesome;" type="text"  placeholder="  Enter Your URL"> 
-                
-                <button class="btn"> <i class="fas fa-cut"></i> CuT-IT</button>
-                
-                
+
+                <input class="input" style="font-family: FontAwesome;" type="text" placeholder="  Enter Your URL">
+
             </div>
-            
+            <div class="child4">
+                <button class="btn" onclick=grabber()> <i class="fas fa-cut"></i> CuT-IT</button>
+
+            </div>
+
         </div>
     </div>
     <script src="https://kit.fontawesome.com/3414cae6ee.js" crossorigin="anonymous"></script>
