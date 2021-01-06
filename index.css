@@ -1,146 +1,218 @@
-*{  margin: 0px;
-    padding: 0px;
+* {
+    margin: 0rem;
+    padding: 0rem;
     top: 0%;
     left: 0%;
+    box-sizing: border-box
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+html {
+    font-size: 62.5%;
+    width: 100vw;
+    min-height: 100vh;
+}
 
-
-html{
-    font-family: 'Langar', cursive;
+body {
     background: url("bg5.jpg") no-repeat center fixed;
-    position: absolute;
-    width: 100%;
+    font-family: 'Langar', cursive;
     background-size: cover;
- 
+    margin: 0;
 }
 
-
-h1{ 
-    display: inline-block;
-    font-size: 4rem;
-    padding-left: 85px;
-    padding-bottom: 40px;
+h1 {
+    font-size: 6.4rem;
+    width: 48rem;
     color: white;
-    text-shadow: -4px 2px 3px #109790;
-}
-.box1{
-
-    padding: 40px 0px;
+    text-shadow: -.4rem .2rem .3rem #109790;
+    text-align: center;
 }
 
-.box2{
+.parent1 {
+    display: flex;
+    justify-content: space-between;
+}
 
+.parent2 {
+    padding-left: 22rem;
+}
+
+.parent3 {
     display: flex;
     justify-content: center;
-    padding: 90px;
-    padding-top: 200px;
+    align-items: center;
+    height: 36rem;
+    padding: 4rem;
+    padding-top: 20rem;
 }
 
-.urlBox{
+.urlBox {
+    width: 46rem;
     display: flex;
-    border-radius: 15px;
-    width: 50%;
-    
+    align-items: center;
+    border-radius: 1.5rem;
+    justify-content: space-evenly;
 }
 
-
-.btn{
+.btn {
     background-color: rgb(38 85 111);
     color: white;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 0px 3px;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    border: 2px solid white;
+    border: .2rem solid white;
     cursor: pointer;
     outline: none;
-    margin-left: 10px;
     transition: all 0.2s ease-in-out;
-    width: 8rem;
+    padding: 0.8rem;
 }
 
-
-.urlBox input{
-    font-family: 'Langar', cursive;
-    font-size: 18px;
-    padding: 9px 12px;
-    border-radius: 16px;
-    outline: none ;
-    width: 80%;
-    border: 2px solid white;
+.urlBox input {
+    font-size: 1.8rem;
+    padding: .9rem 1.2rem;
+    border-radius: 1.6rem;
+    outline: none;
+    width: 100%;
+    border: .3rem solid rgb(34 87 110);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgb(196, 142, 42);
     color: white;
-    border: 2px solid wheat;
-    
+    border: .2rem solid wheat;
+    font-size: 2rem;
 }
 
-#animatedText{
-    
+#animatedText {
     font-family: 'Langar', cursive;
-    
-    border: 2px solid white;
-    font-size: 2rem;
+    box-shadow: 0rem 0rem 1.5rem .4rem #22576e;
+    border: .2rem solid white;
+    font-size: 3.2rem;
     font-weight: bold;
-    margin-left: 236px ;
     color: white;
     background-color: rgb(34 87 110);
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     cursor: pointer;
-    max-width: 100px;
+    width: 14rem;
 }
 
 #animatedText:after {
-    content:"";
-    animation: animatedText 3s linear infinite;
-  }
+    content: "";
+    animation: animatedText 4s ease-in-out infinite;
+}
 
-@keyframes animatedText{
-    0%{
+@keyframes animatedText {
+    0% {
         content: "Simple";
     }
-    50%{
+    50% {
         content: "Better";
     }
-    100%{
+    100% {
         content: "Faster";
     }
 }
 
-::placeholder{
+::placeholder {
     color: rgba(0, 0, 0, 0.664);
+    font-weight: bold;
 }
 
-.git{
-    font-family: 'Langar', cursive;    
-    background-color:rgb(38 85 111);
-    border: 1px solid white;
-    font-size: 1.2rem;
-    float: right;
-    margin-right: 35px ;
-    padding: 0.7rem;
-    border-radius: 15px;
+.child1 {
+    padding: 3rem 4rem;
+}
+
+.child2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    height: 12rem;
+    padding: 3rem;
+}
+
+.child2 a {
+    font-family: 'Langar', cursive;
+    background-color: rgb(38 85 111);
+    border: .1rem solid white;
+    font-size: 1.8rem;
+    padding: 1.05rem;
+    border-radius: 1.5rem;
     cursor: pointer;
-
+    box-shadow: 0rem 0rem 1.5rem .4rem #22576e;
     outline: none;
-
+    transition: all 0.2s ease-in;
 }
 
-a .git{
+.child2 a {
     text-decoration: none;
     color: white;
 }
 
-a .git:hover{
+.child2 a:hover {
     background-color: rgb(196, 142, 42);
+    font-size: 2.22rem;
 }
 
-a .git i{
-    font-size: 1.4rem;
+.a i {
+    font-size: 2.24rem;
+}
+
+.child4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 6rem;
+    margin-left: .6rem;
+}
+
+@media(max-width:759px) {
+    .parent1 {
+        flex-direction: column;
+    }
+    .child1 {
+        display: flex;
+        justify-content: center;
+    }
+    .child2 {
+        width: auto;
+    }
+    .parent2 {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:554px) {
+    .btn {
+        width: 10rem;
+    }
+    .btn:hover {
+        font-size: 1.8rem;
+    }
+    .child2 a:hover {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:370px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .parent3 {
+        /* width: none; */
+        flex-direction: column;
+        height: auto;
+        padding-top: 6rem;
+    }
+    .urlBox {
+        width: auto;
+    }
+    .child4 {
+        justify-content: center;
+    }
 }
