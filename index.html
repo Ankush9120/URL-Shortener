@@ -36,6 +36,22 @@
         </div>
 
     </div>
-</body>
+    <script type="text/javascript">
+        function ani() {
+            document.querySelector('.ani-text').innerText = `SIMPLE`;
 
+            setTimeout(() => {
+                document.querySelector('.ani-text').innerText = 'BETTER';
+            }, 2500);
+
+            setTimeout(() => {
+                document.querySelector('.ani-text').innerText = 'FASTER';
+            }, 5000);
+        }
+        ani();
+
+        setInterval(ani, 7500);
+    </script>
+</body>
+    
 </html>
