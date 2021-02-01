@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener - CuT-IT</title>
     <link rel="stylesheet" href="index.css">
-    
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Yusei+Magic&display=swap');
+    </style>
+
 </head>
+
 <body>
     <div class="container">
+        <div class="b1">
+            <span class="h">URL Shortener</span>
+            <a target="_blank" class="git" href="https://github.com/l33t7here"><i class="fa fa-github"></i>
+                My GiT</a>
 
-        <div class="parent1">
-            <div class="child1">
-                <h1>URL Shortener</h1>
-
-
-            </div>
-            <div class="child2">
-                <a href="https://github.com/l33t7here" target="_blank"><i id="gitlogo" class="fab fa-github"></i> MY
-                    GiT</a>
+        </div>
+        <div class="ani">
+            <div class="ani-cover">
+                <span class="ani-text"></span>
 
             </div>
         </div>
-
-
-        <div class="parent2">
-            <div class="child3" id="animatedText"></div>
-
-        </div>
-        <div class="parent3">
-            <div class="urlBox">
-
-                <input class="input" style="font-family: FontAwesome;" type="text" placeholder="  Enter Your URL">
-
+        <div class="b2">
+            <div class="input-btn-cover">
+                <input class="input" type="text" placeholder="  Enter Your URL">
+                <button id="btn" class="button is-info" onclick="grabber()">CuT-iT</button>
             </div>
-            <div class="child4">
-                <button class="btn" onclick=grabber()> <i class="fas fa-cut"></i> CuT-IT</button>
-
-            </div>
-
         </div>
+
     </div>
-    <script src="https://kit.fontawesome.com/3414cae6ee.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
