@@ -142,7 +142,7 @@ body {
     font-family: FontAwesome, 'Open Sans';
 }
 
-.btn {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,11 +159,10 @@ body {
     height: 4.5rem;
     font-size: 1.8rem;
     line-height: 1;
-    padding-bottom: .4rem;
     letter-spacing: 1px;
 }
 
-.btn:hover {
+.button:hover {
     background: rgb(50 152 220 / 0.5);
     transition: .3s;
     transform: scale(1.08);
@@ -271,7 +270,7 @@ body {
     .input-btn-cover {
         flex-direction: column;
     }
-    .btn {
+    .button {
         margin-top: 1rem;
     }
     .ani-cover {
