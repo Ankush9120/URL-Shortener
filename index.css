@@ -1,218 +1,285 @@
 * {
-    margin: 0rem;
-    padding: 0rem;
-    top: 0%;
-    left: 0%;
-    box-sizing: border-box
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-html {
-    font-size: 62.5%;
-    width: 100vw;
-    min-height: 100vh;
+html, body, .container {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    background: url("bg5.jpg") no-repeat center fixed;
-    font-family: 'Langar', cursive;
+    background: url("https://i.ibb.co/wJsQBqN/bg4.jpg") no-repeat center center/cover fixed;
     background-size: cover;
-    margin: 0;
 }
 
-h1 {
-    font-size: 6.4rem;
-    width: 48rem;
-    color: white;
-    text-shadow: -.4rem .2rem .3rem #109790;
+.b1 {
     text-align: center;
-}
-
-.parent1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30%;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
-.parent2 {
-    padding-left: 22rem;
+.b1 .h {
+    font-size: 6.4rem;
+    font-family: 'Yusei Magic', sans-serif;
+    display: grid;
+    place-items: center;
+    width: 50rem;
+    height: fit-content;
+    color: white;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    background: rgb(250 250 250 / 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: .8rem;
+    box-shadow: 0px 0px 10px 0px black;
+    padding: 0 .8rem;
+    margin: 0 2rem 0 5rem;
+    letter-spacing: 3px;
 }
 
-.parent3 {
+.b1 .git {
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(250, 250, 250, 0.25);
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    outline: none;
+    backdrop-filter: blur(5px);
+    font-size: 2.5rem;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    padding: .8rem;
+    height: fit-content;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 5rem 0 0;
+}
+
+.b1 .git:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.b2 {
+    position: relative;
+    height: fit-content;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36rem;
-    padding: 4rem;
-    padding-top: 20rem;
+    height: 55%;
 }
 
-.urlBox {
-    width: 46rem;
+.ani {
+    position: relative;
+    height: 8rem;
+    display: flex;
+}
+
+.ani-cover {
     display: flex;
     align-items: center;
-    border-radius: 1.5rem;
-    justify-content: space-evenly;
+    position: relative;
+    width: 32rem;
+    margin-left: 12vw;
+}
+
+.ani-text {
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid white;
+    font-size: 6rem;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 7.8rem;
+    color: rgba(250, 250, 250, 0.8);
+    animation: animate 2.5s linear infinite;
+    letter-spacing: 8px;
+    backdrop-filter: blur(4px);
+    border-radius: .8rem;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 25.6rem;
+    }
+}
+
+.input-btn-cover {
+    background: rgba(250, 250, 250, 0.25);
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: -3px 3px 25px 0px black;
+    margin-top: 5rem;
+}
+
+.input {
+    outline: none;
+    padding: 1rem;
+    border-radius: .8rem;
+    border: none;
+    width: 35vw;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.input::placeholder {
+    font-family: FontAwesome, 'Open Sans';
 }
 
 .btn {
-    background-color: rgb(38 85 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50 152 220 / 0.8);
     color: white;
-    border-radius: 1.5rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    border: .2rem solid white;
+    outline: none;
     cursor: pointer;
-    outline: none;
-    transition: all 0.2s ease-in-out;
-    padding: 0.8rem;
-}
-
-.urlBox input {
+    border-radius: .8rem;
+    border: 2px solid rgba(250, 250, 250, 0.2);
+    margin: 0 0 0 1rem;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+    width: 8rem;
+    height: 4.5rem;
     font-size: 1.8rem;
-    padding: .9rem 1.2rem;
-    border-radius: 1.6rem;
-    outline: none;
-    width: 100%;
-    border: .3rem solid rgb(34 87 110);
+    line-height: 1;
+    padding-bottom: .4rem;
+    letter-spacing: 1px;
 }
 
 .btn:hover {
-    background-color: rgb(196, 142, 42);
-    color: white;
-    border: .2rem solid wheat;
-    font-size: 2rem;
+    background: rgb(50 152 220 / 0.5);
+    transition: .3s;
+    transform: scale(1.08);
 }
 
-#animatedText {
-    font-family: 'Langar', cursive;
-    box-shadow: 0rem 0rem 1.5rem .4rem #22576e;
-    border: .2rem solid white;
-    font-size: 3.2rem;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(34 87 110);
-    padding: 1rem 2rem;
-    text-align: center;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    width: 14rem;
-}
-
-#animatedText:after {
-    content: "";
-    animation: animatedText 4s ease-in-out infinite;
-}
-
-@keyframes animatedText {
-    0% {
-        content: "Simple";
-    }
-    50% {
-        content: "Better";
-    }
-    100% {
-        content: "Faster";
-    }
-}
-
-::placeholder {
-    color: rgba(0, 0, 0, 0.664);
-    font-weight: bold;
-}
-
-.child1 {
-    padding: 3rem 4rem;
-}
-
-.child2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19rem;
-    height: 12rem;
-    padding: 3rem;
-}
-
-.child2 a {
-    font-family: 'Langar', cursive;
-    background-color: rgb(38 85 111);
-    border: .1rem solid white;
-    font-size: 1.8rem;
-    padding: 1.05rem;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0rem 0rem 1.5rem .4rem #22576e;
-    outline: none;
-    transition: all 0.2s ease-in;
-}
-
-.child2 a {
-    text-decoration: none;
-    color: white;
-}
-
-.child2 a:hover {
-    background-color: rgb(196, 142, 42);
-    font-size: 2.22rem;
-}
-
-.a i {
-    font-size: 2.24rem;
-}
-
-.child4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 12rem;
-    height: 6rem;
-    margin-left: .6rem;
-}
-
-@media(max-width:759px) {
-    .parent1 {
-        flex-direction: column;
-    }
-    .child1 {
-        display: flex;
+@media screen and (max-width:906px) {
+    .b1 {
         justify-content: center;
+        height: fit-content;
+        padding: 10% 0 10% 0;
     }
-    .child2 {
-        width: auto;
+    .b2 {
+        height: 50%;
     }
-    .parent2 {
+    .b1 .h {
+        margin-bottom: 4rem;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width:884px) {
+    .b1 .h {
+        margin: 2rem;
+    }
+    .b1 .git {
+        margin: 0 2rem 2rem 2rem;
+    }
+    .ani-cover {
+        width: 40vw;
+        margin: 0;
+    }
+    .ani {
+        justify-content: center;
+        height: 12vw;
+    }
+    .ani-text {
+        font-size: 10vw;
+        height: 13vw;
+    }
+    .input {
+        width: 60vw;
+    }
+    @keyframes animate {
+        70%, 90% {
+            width: 42vw;
+        }
+    }
+}
+
+@media screen and (max-width:690px) {
+    .b1 .h {
+        font-size: 11vw;
         padding: 0;
-        display: flex;
-        justify-content: center;
+    }
+    .ani-cover {
+        width: 44vw;
+    }
+    @keyframes animate {
+        70%, 90% {
+            width: 44vw;
+        }
     }
 }
 
-@media(max-width:554px) {
-    .btn {
-        width: 10rem;
+@media screen and (max-width:519px) {
+    .b1 .h {
+        margin-bottom: 4rem;
+        font-size: 10.5vw;
+        padding: 1rem 0;
     }
-    .btn:hover {
-        font-size: 1.8rem;
+    .b1 .git {
+        font-size: 5vw;
     }
-    .child2 a:hover {
-        font-size: 1.8rem;
+    .ani-cover {
+        width: 45vw;
+    }
+    @keyframes animate {
+        70%, 90% {
+            width: 45vw;
+        }
     }
 }
 
-@media (max-width:370px) {
-    h1 {
-        font-size: 5rem;
+@media screen and (max-width:400px) {
+    .b1 .h {
+        font-size: 10vw;
     }
-    .parent3 {
-        /* width: none; */
+    .ani-cover {
+        width: 46vw;
+    }
+    @keyframes animate {
+        70%, 90% {
+            width: 46vw;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .b1 .h {
+        width: 20rem;
+    }
+    .input {
+        width: 80vw;
+    }
+    .input-btn-cover {
         flex-direction: column;
-        height: auto;
-        padding-top: 6rem;
     }
-    .urlBox {
-        width: auto;
+    .btn {
+        margin-top: 1rem;
     }
-    .child4 {
-        justify-content: center;
+    .ani-cover {
+        width: 47vw;
+    }
+    @keyframes animate {
+        70%, 90% {
+            width: 47vw;
+        }
     }
 }
